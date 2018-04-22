@@ -1,93 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
+
 <head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-<style>
-html, body, .container
-{
-    height: 100%; 
-    min-height: 100%;
-}
-
-.first {
-    float: left;
-    width: 20%;
-    height: 30%;
-    background-color: red;
-    margin: 0; 
-    padding-left: 0.5em; 
-    padding-right: 0.5em
-}
-
-.second{
-    float: left;
-    width: 20%;
-    height: 70%;
-    background-color: green;
-    
-
-}
-
-
-.third{
-    float: right;
-    width: 80%;
-    height: 80%;
-    background-color: blue;
-    
-
-}
-
-.fourth {
-    float: right;
-    width: 40%;
-    height: 20%;
-    background-color: #DDDDDD;
-   
-}
-
-.last{
-    float: right;
-    width: 40%;
-    height: 20%;
-    background-color: yellow;
-    
-
-}
-</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
 
-<div class="container">
 
-<header>
-   <h1> test</h1>
-</header>
+  <body>
 
-<div class="container">
+  <nav data-activates="mobile-demo" class="button-collapse"> 
+  </nav>
 
-<div class="first">first
-  <img src="./img/1.jpg" class="first">
-</div>
+  <script type="text/javascript">
+    $(".button-collapse").sideNav();
+  </script>
 
-<div class="third">third
-  <img src="./img/2.jpg" class="second">
-</div>
+<div class="slider">
+    <ul class="slides">
 
-<div class="second">second
-  <img src="./img/3.jpg" class="third">
-</div>
+      <li>
+        <img src="img/1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>first page</h3>
+          <h5 class="light grey-text text-lighten-3">Here Here Here Here Here Here Here Here Here.</h5>
+        </div>
+      </li>
 
-<div class="fourth">fourth
-  <img src="./img/4.jpg" class="fourth">
-</div>
+      <li>
+        <img src="img/2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>second page</h3>
+          <h5 class="light grey-text text-lighten-3">Here Here Here Here Here Here Here Here Here.</h5>
+        </div>
+      </li>
 
-<div class="last">last
-<img src="./img/5.jpg" class="last">
-</div>
+      <li>
+        <img src="img/3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>third page</h3>
+          <h5 class="light grey-text text-lighten-3">Here Here Here Here Here Here Here Here Here.</h5>
+        </div>
+      </li>
 
-</body>
+      <li>
+        <img src="img/4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>the last one!</h3>
+          <h5 class="light grey-text text-lighten-3">Here Here Here Here Here Here Here Here Here.</h5>
+        </div>
+      </li>
 
+    </ul>
+  </div>
+
+
+
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+</script>
+
+
+<script type="text/javascript">
+  $('.carousel.carousel-slider').carousel({full_width: true});
+</script>
+
+
+  </body>
 
 </html>
+
